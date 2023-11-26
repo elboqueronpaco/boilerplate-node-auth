@@ -351,3 +351,5 @@ $RECYCLE.BIN/
 
 # End of https://www.toptal.com/developers/gitignore/api/node,dotenv,macos,windows,linux,visualstudiocode,jetbrains
 bun.lockb
+mongodb/
+mongo/
