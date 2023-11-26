@@ -16,9 +16,13 @@ export class AppServer {
         this.PORT = PORT
         this.routes = routes
         this.BASE_URL = BASE_URL
+        
     }
 
     async start () {
+        //middlewares
+        this.app.use(express.json())
+        this.app.use(express.urlencoded({extended: true}))
         //routes
         this.app.use(this.routes)
         await this.app.listen(this.PORT)

@@ -1,5 +1,6 @@
 import { envs } from "./adapters";
-import { AppRoutes, AppServer } from "./presentation";
+import { AppMiddleware, AppRoutes, AppServer } from "./presentation";
+
 (async () => {
     await main()
 })()
